@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+my_venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Flask uploads / runtime
+code/uploads/
+
+# Datasets and large artifacts
+dataset/
+*.csv
+*.pdf
+certificates/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
