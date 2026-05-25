@@ -4,30 +4,59 @@ __pycache__/
 *.pyo
 *.pyd
 *.so
+*.egg
 *.egg-info/
 .eggs/
+__pypackages__/
+*.manifest
+*.spec
+
+# Bytecode / caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.cache/
 
 # Virtual environments
 .venv/
 venv/
 my_venv/
 
+# Environment files
+.env
+.env.*
+
 # Jupyter
 .ipynb_checkpoints/
 
 # Flask uploads / runtime
 code/uploads/
+instance/
 
 # Datasets and large artifacts
 dataset/
 *.csv
 *.pdf
 certificates/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.mp4
 
 # Editor / OS
 .vscode/
+.idea/
 .DS_Store
 Thumbs.db
 
 # Logs
 *.log
+
+# Build artifacts
+build/
+dist/
+*.whl
