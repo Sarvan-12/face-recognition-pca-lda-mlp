@@ -1,31 +1,74 @@
-# Face Recognition App
+# Face Recognition with PCA, LDA & MLP
 
-Simple face recognition demo using PCA, LDA, and an MLP classifier with a small Flask web app.
+A demo project for face recognition using Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), and a Multi-Layer Perceptron (MLP) classifier. Includes a simple Flask web app for uploading and predicting faces.
 
-## Clone
+## Features
+- Dimensionality reduction via PCA and LDA
+- Classification using an MLP neural network
+- Simple web interface with Flask
+- Easily extensible dataset structure
 
-```bash
-git clone <YOUR_REPO_URL>
-cd IS
-```
+## Installation
 
-## Setup
+1. **Clone the repo:**
+   ```bash
+   git clone https://github.com/Sarvan-12/face-recognition-pca-lda-mlp.git
+   cd face-recognition-pca-lda-mlp
+   ```
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install flask opencv-python numpy scikit-learn
-```
+2. **Set up the environment:**
+   - For Windows:
+     ```bash
+     python -m venv .venv
+     .venv\Scripts\activate
+     ```
+   - For Linux/Mac:
+     ```bash
+     python3 -m venv .venv
+     source .venv/bin/activate
+     ```
 
-## Run
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   # or if requirements.txt is missing:
+   pip install flask opencv-python numpy scikit-learn
+   ```
 
-```bash
-python code\app.py
-```
+## Usage
 
-Open http://127.0.0.1:5000 and upload a face image.
+1. **Prepare the dataset:**
+   - Organize images into `dataset/faces/<person_name>/` directories, where each folder is a class label.
 
-## Dataset
+2. **Run the app:**
+   ```bash
+   python code/app.py
+   # Or depending on your project structure
+   # python3 code/app.py
+   ```
 
-Put images in `dataset/faces/<person_name>/`.
-Each subfolder name becomes a class label.
+3. **Open in browser:**
+   Visit [http://127.0.0.1:5000](http://127.0.0.1:5000) and upload a face image.
+
+## Algorithms Used
+- **PCA (Principal Component Analysis):** Reduces image dimensionality while preserving variance.
+- **LDA (Linear Discriminant Analysis):** Projects data in a way that maximizes class separability.
+- **MLP (Multi-Layer Perceptron):** Neural network classifier for faces after feature engineering.
+
+## Example
+> _Coming soon: Add usage gifs or UI screenshots!_
+
+## Contributing
+Pull requests are welcome. Please open issues for suggestions and bugs.
+
+## License
+MIT
+
+---
+
+**References**
+- [PCA Wiki](https://en.wikipedia.org/wiki/Principal_component_analysis)
+- [LDA Wiki](https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
+- [MLP Wiki](https://en.wikipedia.org/wiki/Multilayer_perceptron)
+
+**Author:** Sarvan-12
