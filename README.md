@@ -57,18 +57,3 @@ A demo project for face recognition using Principal Component Analysis (PCA), Li
 
 ## Example
 > _Coming soon: Add usage gifs or UI screenshots!_
-
-## Contributing
-Pull requests are welcome. Please open issues for suggestions and bugs.
-
-## License
-MIT
-
----
-
-**References**
-- [PCA Wiki](https://en.wikipedia.org/wiki/Principal_component_analysis)
-- [LDA Wiki](https://en.wikipedia.org/wiki/Linear_discriminant_analysis)
-- [MLP Wiki](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-
-**Author:** Sarvan-12
